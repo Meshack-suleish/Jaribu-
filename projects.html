@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Projects by Meshack - Portfolio of works">
+    <meta name="keywords" content="projects, portfolio, work">
+    <meta name="author" content="Meshack">
+    <title>Projects</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+
+    <style>
+      
+main.three-column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+section p {
+    display: none;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    main.three-column {
+        grid-template-columns: 1fr; 
+    }
+
+    section {
+        margin-bottom: 20px; 
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+        <nav class="horizontal-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="survey.html">Survey</a>
+        </nav>
+    </header>
+    <main class="three-column">
+        <section onclick="toggleDetails('project1')">
+            <h2>Project 1</h2>
+            <div id="project1" style="display:none;">
+                  <img src="images/slider-img.jpg" style="width: 100%; margin-bottom: 20px;" alt="project" >
+                  This is one of my successful web projects developed with python 
+                  using Flak framework its simple and user friendly contact us for
+                  websites like this
+                  <a href="contact.html">Contact me</a>
+
+            </div>
+        </section>
+        <section onclick="toggleDetails('project2')">
+            <h2>Project 2</h2>
+            <div id="project2" style="display:none;">
+                <img src="images/slider-img2.jpg" style="width: 100%; margin-bottom: 20px;" alt="project" >
+                This is one of my successful web projects developed with python 
+                using Flak framework its simple and user friendly contact us for
+                websites like this
+                <a href="contact.html">Contact me</a>
+            </div>
+        </section>
+        <section onclick="toggleDetails('project3')">
+            <h2>Project 3</h2>
+            <div id="project3" style="display:none;">
+                <img src="images/slider-img3.jpg" style="width: 100%; margin-bottom: 20px;" alt="project">
+                This is one of my successful web projects developed with python 
+                using Flak framework its simple and user friendly contact us for
+                websites like this
+                <a href="contact.html">Contact me</a>
+            </div>
+        </section>
+    </main>
+  
+</body>
+</html>

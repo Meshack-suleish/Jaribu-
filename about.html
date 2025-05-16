@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Learn about Meshack - Skills, Hobbies, and Journey">
+    <meta name="keywords" content="about me, skills, hobbies">
+    <meta name="author" content="Meshack">
+    <title>About Me</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+
+.mystory,aside {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+   
+}
+
+
+main.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    padding: 20px;
+}
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+ul li ul {
+    padding-left: 20px; 
+}
+
+ul li ul li {
+    font-size: 1em;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    main.two-column {
+        grid-template-columns: 1fr; 
+    }
+
+    section, aside {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <nav class="horizontal-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="survey.html">Survey</a>
+        </nav>
+    </header>
+    <main class="two-column">
+        <section>
+            <div class="mystory">
+            <h2>Do you know?</h2>
+            <p> Am a software developer with 10 years of experience , advanced 
+                knowledge in web development , mobile Application development and machine learning 
+                One of my works include "Guess the verse" This is one of my successful web projects developed with python 
+                using Flak framework its simple and user friendly contact us for
+                websites like this</p>
+             </div>
+        </section>
+        <aside>
+            <h2>Skills</h2>
+            <ul>
+                <li>Web development
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>PHP</li>
+
+                    </ul>
+                </li>
+                <li>Mobile App development
+                    <ul>
+                    <li>JAVA</li>
+                    <li>XML</li>
+                    </ul>
+               </li>
+
+            </ul>
+        </aside>
+    </main>
+
+</body>
+</html>
